@@ -1,0 +1,58 @@
+body{
+    background: url(istockphoto-599718046-612x612.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.d1{
+    height: 450px;
+    width: 250px;
+    border-radius: 150px;
+    background: rgb(87, 101, 116);
+    transform: translate(600px);
+    box-shadow: 10px 10px  50px  rgb(178, 190, 195) ;
+    margin-top: 30px;
+    
+}
+.d2{
+    height: 80px;
+    width: 80px;
+    margin-left: 85px;
+    transform: translate(0px,40px);
+    background:rgb(231, 76, 60);
+    border-radius: 50%;
+    animation: litu 2s infinite;
+    box-shadow: 1px 1px 30px  rgb(229, 80, 57);
+}
+@keyframes litu{
+    0%{background-color: rgb(229, 80, 57);}
+    25%{background-color: rgb(229, 80, 57);}
+    50%{background-color:rgb(232, 65, 24);}
+    75%{background-color: rgb(194, 54, 22);}
+    85%{background-color: rgb(255, 71, 87);}
+    100%{background-color: rgb(235, 47, 6);}
+
+  }
+.d3{
+    height: 80px;
+    width: 80px;
+    margin-left: 85px;
+    transform: translate(0px,115px);
+    background-color: rgb(243, 156, 18);
+    border-radius: 50%;
+    box-shadow: 1px 1px 30px rgb(241, 196, 15);
+}
+.d4{
+    height: 80px;
+    width: 80px;
+    margin-left: 85px;
+    transform: translate(0px,180px);
+    background: rgb(16, 172, 132);
+    border-radius: 50%;
+    box-shadow: 1px 1px 30px rgb(16, 172, 132);
+}
+hr{
+    margin-top: -10px;
+    margin-left: 700px;
+    background: rgb(34, 47, 62);
+    box-shadow: 1px 1px 20px rgb(178, 190, 195) ;
+}

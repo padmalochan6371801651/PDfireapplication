@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Dropdown with Icons</title>
+    <style>
+        /* Container for the custom dropdown */
+        .custom-select {
+            position: relative;
+            display: inline-block;
+        }
+
+        /* The actual dropdown (hidden by default) */
+        .custom-select select {
+            display: none;
+        }
+
+        /* Custom dropdown items */
+        .select-items {
+            position: absolute;
+            background-color: #f1f1f1;
+            max-height: 200px;
+            overflow-y: auto;
+            z-index: 99;
+            display: none;
+            width: 100%;
+        }
+
+        .select-items div {
+            padding: 10px;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+        }
+
+        .select-items div img {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+
+        .select-selected {
+            padding: 10px;
+            cursor: pointer;
+            border: 1px solid #ccc;
+            background-color: #fff;
+            display: flex;
+            align-items: center;
+        }
+
+        .select-selected img {
+            width: 20px;
+            height: 20px;
+            margin-right: 10px;
+        }
+
+        .select-items div:hover {
+            background-color: #ddd;
+        }
+    </style>
+</head>
+<body>
+
+<div class="custom-select">
+    <div class="select-selected">
+        <img src="https://via.placeholder.com/20" alt="User Icon">
+        Select User
+    </div>
+    <div class="select-items">
+        <div><img src="https://via.placeholder.com/20" alt="User Icon"> John Doe</div>
+        <div><img src="https://via.placeholder.com/20" alt="User Icon"> Jane Smith</div>
+        <div><img src="https://via.placeholder.com/20" alt="User Icon"> Alice Johnson</div>
+    </div>
+</div>
+
+<script>
+    // JavaScript to toggle the custom dropdown
+    const selected = document.querySelector('.select-selected');
+    const items = document.querySelector('.select-items');
+
+    selected.addEventListener('click', () => {
+        items.style.display = items.style.display === 'block' ? 'none' : 'block';
+    });
+
+    // Add click functionality to items
+    const options = document.querySelectorAll('.select-items div');
+    options.forEach(option => {
+        option.addEventListener('click', () => {
+            selected.innerHTML = option.innerHTML;
+            items.style.display = 'none';
+        });
+    });
+
+    // Close the dropdown if clicking outside
+    window.addEventListener('click', (e) => {
+        if (!e.target.closest('.custom-select')) {
+            items.style.display = 'none';
+        }
+    });
+</script>
+
+</body>
+</html>

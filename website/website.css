@@ -1,0 +1,45 @@
+.container-fluid{
+    border: 3px soid black;
+    /* background: black; */
+}
+.col-2{
+    display: flex;
+}
+.div-1{
+    margin-top: 10px;
+    margin-left: 30px;
+}
+i{
+    font-size: 25px;
+    margin-top: 50px;
+    margin-left: 10px;
+    
+}
+.text{
+    font-size: 40px;
+    margin-top: 40px;
+    font-style: oblique;
+    margin-left: 10px;
+}
+.div1{
+    /* list-style: none; */
+}
+ul,li{
+    list-style: none;
+    display: flex;
+    margin-top: 54px;
+    font-size: 20px;
+    margin-left: 20px;
+}
+.img,.img1{
+    margin-top: 5px;
+}
+.img2{
+    margin-top: 50px;
+    border-radius: 20px;
+}
+.balabhadra{
+    
+   
+}
+.
